@@ -1,0 +1,5 @@
+{
+  "name": "TechBrief.AI",
+  "description": "A senior tech editor AI assistant that aggregates daily tech news, formats it for WeChat Official Accounts, and generates shareable data-driven infographics.",
+  "requestFramePermissions": []
+}
