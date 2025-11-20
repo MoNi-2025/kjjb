@@ -91,7 +91,6 @@ export const fetchDailyTechNews = async (dateStr: string): Promise<NewsItem[]> =
 
 const mapCategory = (raw: string): NewsCategory => {
   // Helper to map potentially messy model output to strict Enums
-  // The prompt asks for English Enums, but we add safety checks
   if (raw.includes("China") || raw.includes("Chinese") || raw.includes("Tencent") || raw.includes("Alibaba")) return NewsCategory.CN_BIG7;
   if (raw.includes("US") || raw.includes("America") || raw.includes("Apple") || raw.includes("Google")) return NewsCategory.US_BIG7;
   if (raw.includes("Policy") || raw.includes("Regulation")) return NewsCategory.POLICY;
